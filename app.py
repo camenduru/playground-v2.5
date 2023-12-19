@@ -7,6 +7,7 @@ import uuid
 import gradio as gr
 import numpy as np
 from PIL import Image
+import spaces
 import torch
 from diffusers import DiffusionPipeline
 
@@ -55,6 +56,7 @@ def randomize_seed_fn(seed: int, randomize_seed: bool) -> int:
     return seed
 
 
+@spaces.GPU
 def generate(
     prompt: str,
     negative_prompt: str = "",

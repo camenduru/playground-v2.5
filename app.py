@@ -56,7 +56,7 @@ def randomize_seed_fn(seed: int, randomize_seed: bool) -> int:
     return seed
 
 
-@spaces.GPU
+@spaces.GPU(enable_queue=True)
 def generate(
     prompt: str,
     negative_prompt: str = "",

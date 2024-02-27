@@ -1,5 +1,5 @@
 ---
-title: Playground V2
+title: Playground V2.5
 emoji: 🌍
 colorFrom: pink
 colorTo: green

@@ -11,7 +11,7 @@ import spaces
 import torch
 from diffusers import DiffusionPipeline
 
-DESCRIPTION = """# Playground v2"""
+DESCRIPTION = """# Playground v2.5"""
 if not torch.cuda.is_available():
     DESCRIPTION += "\n<p>Running on CPU 🥶 This demo may not work on CPU.</p>"
 
@@ -27,7 +27,7 @@ NUM_IMAGES_PER_PROMPT = 1
 
 if torch.cuda.is_available():
     pipe = DiffusionPipeline.from_pretrained(
-        "playgroundai/playground-v2-1024px-aesthetic",
+        "playgroundai/playground-v2.5-1024px-aesthetic",
         torch_dtype=torch.float16,
         use_safetensors=True,
         add_watermarker=False,
